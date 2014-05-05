@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context="bhmedia.dungdq.kiemhiepaudio.MainActivity$PlaceholderFragment" >
+    tools:context="com.telpoo.tlbbaudio.MainActivity$PlaceholderFragment" >
 
     <!-- <TextView
         android:id="@+id/section_label"

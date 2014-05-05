@@ -25,8 +25,7 @@
     <!-- style for the tabs -->
 	<style name="MyActionBarTabStyle" parent="Theme.AppCompat.Light">
 	    <item name="android:minWidth">300dip</item>
-	    <item name="android:background">@drawable/top_bg</item>
-	    <item name="background">@drawable/top_bg</item>
+	    <item name="android:background">#000000</item>
 	    <!-- <item name="android:paddingLeft">0dp</item>
 	    <item name="android:paddingRight">0dp</item> -->
 	</style>
