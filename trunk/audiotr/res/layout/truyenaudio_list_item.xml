@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dip" >
+    
+    <!-- Label session -->
+    
+    <RelativeLayout 
+        android:id="@+id/rlt_truyenaudio_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCC"
+        android:padding="3dip">
+        
+        <LinearLayout
+	        android:id="@+id/thumbnail_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginRight="5dip" >
+	
+	        <ImageView
+	            android:id="@+id/icon_label"
+	            android:layout_width="@dimen/icon_label_width"
+	            android:layout_height="@dimen/icon_label_height"
+	            android:layout_gravity="top"
+	            android:scaleType="centerCrop"
+	            android:contentDescription="@string/app_name"
+	            android:background="@drawable/kiemhiep_list_icon" />
+	
+	    </LinearLayout>
+	    
+        <TextView 
+            android:id="@+id/tv_label_truyenaudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="A"
+            android:textStyle="bold"
+            android:textSize="@dimen/tv_label_truyenaudio_textSize"
+            android:textColor="#000"/>
+        
+    </RelativeLayout>
+    
+    <!--  ListRow Left sied Thumbnail image -->
+    
+    <RelativeLayout 
+        android:id="@+id/rlt_truyenaudio_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlt_truyenaudio_label">
+
+	    <LinearLayout
+	        android:id="@+id/thumbnail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginRight="@dimen/thumbnail_marginRight"
+	        android:background="@drawable/border_image"
+	        android:padding="3dip"
+	        android:layout_marginLeft="5sp"
+	        android:layout_marginTop="5sp"
+	        android:layout_marginBottom="5sp" >
+	
+	        <ImageView
+	            android:id="@+id/list_bg_truyenaudio"
+	            android:layout_width="@dimen/thumbnail_width"
+	            android:layout_height="@dimen/thumbnail_height"
+	            android:layout_gravity="top"
+	            android:scaleType="centerCrop"
+	            android:contentDescription="@string/app_name" />
+	
+	    </LinearLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/rlt_truyenaudio_text"
+	        android:layout_width="@dimen/rlt_truyenaudio_text_width"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/thumbnail"
+	        android:layout_toRightOf="@+id/thumbnail"
+	        android:layout_centerVertical="true">
+	        
+	        <!-- Ten Truyen Audio -->
+		    <TextView
+		        android:id="@+id/tvTenTruyen"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="0sp"
+		        android:layout_marginBottom="5sp"
+		        android:text="@string/app_name"
+		        android:textColor="#000"
+		        android:textSize="@dimen/tvTenTruyen_textSize"
+		        android:textStyle="bold"
+		        android:typeface="sans" />
+			
+		    <!-- Tac gia -->
+		
+		    <TextView
+		        android:id="@+id/tvTacGiaSoTap"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/tvTenTruyen"
+		        android:layout_below="@+id/tvTenTruyen"
+		        android:layout_marginBottom="0sp"
+		        android:text="Tac gia / So tap"
+		        android:textColor="#999"
+		        android:textSize="@dimen/tvTacGiaSoTap_textSize" />
+		    
+		    <!-- Tacgia -->
+		    
+		    <!-- <TextView
+		        android:id="@+id/tvCheo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/tvTenTruyen"
+		        android:layout_toRightOf="@id/tvTacGia"
+		        android:layout_marginLeft="2sp"
+		        android:layout_marginRight="2sp"
+		        android:layout_marginBottom="5sp"
+		        android:text="/"
+		        android:textColor="#999"
+		        android:textSize="12sp" />
+		    
+		    Tong so tap
+		    
+		    <TextView
+		        android:id="@+id/tvTongSoTap"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/tvCheo"
+		        android:layout_below="@+id/tvTenTruyen"
+		        android:layout_marginBottom="5sp"
+		        android:text="30 tập"
+		        android:textColor="#999"
+		        android:textSize="12sp" /> -->
+	        
+	    </RelativeLayout>
+
+	    <ImageButton
+	        android:id="@+id/btn_bookmark"
+	        android:layout_width="@dimen/btn_bookmark_width"
+	        android:layout_height="@dimen/btn_bookmark_height"
+	        android:layout_alignRight="@id/rlt_truyenaudio_text"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="20dp"
+	        android:background="@drawable/star_1" />
+    
+    </RelativeLayout>
+
+</RelativeLayout>

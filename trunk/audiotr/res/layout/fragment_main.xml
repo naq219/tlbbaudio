@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="bhmedia.dungdq.kiemhiepaudio.MainActivity$PlaceholderFragment" >
+
+    <!-- <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" /> -->
+        
+    <ListView 
+        android:id="@+id/lv_truyenaudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"></ListView>
+        
+    <LinearLayout 
+        android:id="@+id/ll_player_control"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="#111"
+        android:layout_weight="2"
+        android:padding="10dp"
+        android:visibility="gone">
+        
+        <!-- Previous Button -->
+            <ImageButton
+                android:id="@+id/btnPrevious_control" 
+                android:background="@android:drawable/ic_media_previous"
+                android:layout_width="@dimen/btnPrevious_control_width"
+                android:layout_height="@dimen/btnPrevious_control_height"
+                android:layout_margin="10dp"/>
+            <!-- Play Button -->
+            <ImageButton 
+                android:id="@+id/btnPlay_control"
+                android:background="@android:drawable/ic_media_play"
+                android:layout_width="@dimen/btnPlay_control_width"
+                android:layout_height="@dimen/btnPlay_control_height"
+                android:layout_margin="10dp"/>
+            <!-- Next Button -->
+            <ImageButton 
+                android:id="@+id/btnNext_control"
+                android:background="@android:drawable/ic_media_next"
+                android:layout_width="@dimen/btnNext_control_width"
+                android:layout_height="@dimen/btnNext_control_height"
+                android:layout_margin="10dp"/>
+        
+    </LinearLayout>
+    
+    <!-- <bhmedia.dungdq.kiemhiepaudio.model.IndexableListView
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent" 
+	    android:id="@+id/lv_truyenaudio" /> -->
+
+</LinearLayout>
