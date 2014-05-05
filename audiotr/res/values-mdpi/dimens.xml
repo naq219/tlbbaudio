@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="navigation_drawer_listitem_height">48dp</dimen>
+	
+	<!-- List TruyenAudio Items -->
+	<dimen name="icon_label_width">24px</dimen>
+    <dimen name="icon_label_height">24px</dimen>
+	<dimen name="tv_label_truyenaudio_textSize">15dp</dimen>
+	
+	<dimen name="thumbnail_width">80px</dimen>
+	<dimen name="thumbnail_height">100px</dimen>
+	<dimen name="thumbnail_marginRight">15sp</dimen>
+	
+	<dimen name="rlt_truyenaudio_text_width">130dp</dimen>
+	<dimen name="tvTenTruyen_textSize">13sp</dimen>
+	<dimen name="tvTacGiaSoTap_textSize">10sp</dimen>
+	
+	<dimen name="btn_bookmark_width">22px</dimen>
+	<dimen name="btn_bookmark_height">20px</dimen>
+</resources>

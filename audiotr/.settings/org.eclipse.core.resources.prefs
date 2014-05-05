@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/bhmedia/dungdq/kiemhiepaudio/GetJSONData.java=UTF-8
+encoding//src/bhmedia/dungdq/kiemhiepaudio/MainActivity.java=UTF-8
+encoding//src/bhmedia/dungdq/kiemhiepaudio/NavigationDrawerFragment.java=UTF-8
+encoding//src/bhmedia/dungdq/kiemhiepaudio/PlayListAudio.java=UTF-8
+encoding//src/bhmedia/dungdq/kiemhiepaudio/customadapter/ListTruyenAudioAdapter.java=UTF-8
+encoding//src/bhmedia/dungdq/kiemhiepaudio/model/FavouriteList.java=UTF-8
+encoding//src/bhmedia/dungdq/kiemhiepaudio/model/GlobalVariable.java=UTF-8
+encoding//src/bhmedia/dungdq/kiemhiepaudio/process/StringMatcher.java=UTF-8
+encoding//src/bhmedia/dungdq/kiemhiepaudio/process/StringUtils.java=UTF-8

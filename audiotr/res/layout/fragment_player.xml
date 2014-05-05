@@ -1,0 +1,259 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bhmedia.dungdq.kiemhiepaudio.MainActivity$PlaceholderFragment" >
+
+    <!-- Player Header -->
+
+    <RelativeLayout
+        android:id="@+id/rlt_player_header_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#EEE"
+        android:padding="5dp" >
+
+        <!-- Back button -->
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/btnBack_width"
+            android:layout_height="@dimen/btnBack_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_icon"
+            android:visibility="gone" />
+
+        <!-- Audio Title -->
+
+        <TextView
+            android:id="@+id/tvTenTruyenChiTiet"
+            android:layout_width="@dimen/tvTenTruyenChiTiet_width"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="@dimen/tvTenTruyenChiTiet_textSize"
+            android:textStyle="bold" />
+
+        <!-- Playlist button -->
+
+        <ImageButton
+            android:id="@+id/btnPlaylist"
+            android:layout_width="@dimen/btnPlaylist_width"
+            android:layout_height="@dimen/btnPlaylist_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/list_icon" />
+    </RelativeLayout>
+
+    <!-- Audio Content -->
+
+    <ViewSwitcher
+        android:id="@+id/profileSwitcher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlt_player_header_bg" >
+
+        <RelativeLayout
+            android:id="@+id/rlt_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ScrollView
+                android:id="@+id/scr_content"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/scr_content_height" >
+
+                <TextView
+                    android:id="@+id/tv_Content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="@dimen/tv_Content_textSize" />
+            </ScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlt_playlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ListView
+                android:id="@+id/lv_playlist"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/scr_content_height" >
+            </ListView>
+        </RelativeLayout>
+    </ViewSwitcher>
+
+    <!-- Player Footer -->
+
+    <RelativeLayout
+        android:id="@+id/rlt_player_footer_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/rlt_player_footer_bg_height"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:gravity="center" >
+
+        <!-- Timer Display -->
+
+        <LinearLayout
+            android:id="@+id/timerDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" >
+
+            <!-- Current Duration Label -->
+
+            <TextView
+                android:id="@+id/audioCurrentDurationLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="0:00"
+                android:textColor="#eeeeee"
+                android:textStyle="bold" />
+            <!-- Total Duration Label -->
+
+            <TextView
+                android:id="@+id/audioTotalDurationLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="5:00"
+                android:textColor="#04cbde"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Progress Bar/Seek bar -->
+
+        <SeekBar
+            android:id="@+id/audioProgressBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timerDisplay"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="@dimen/audioProgressBar_paddingLeft"
+            android:paddingRight="@dimen/audioProgressBar_paddingRight" />
+
+        <!-- Player Buttons -->
+
+        <LinearLayout
+            android:id="@+id/rlt_player_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/audioProgressBar"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <!-- Download Button -->
+
+            <ImageButton
+                android:id="@+id/btnDownload"
+                android:layout_width="@dimen/btnDownload_width"
+                android:layout_height="@dimen/btnDownload_height"
+                android:layout_margin="@dimen/btnControl_margin"
+                android:background="@drawable/download_button" />
+            <!-- Favourite Button -->
+
+            <ImageButton
+                android:id="@+id/btnFavourite"
+                android:layout_width="@dimen/btnFavourite_width"
+                android:layout_height="@dimen/btnFavourite_height"
+                android:layout_margin="@dimen/btnControl_margin"
+                android:background="@drawable/star_1_button" />
+            <!-- Previous Button -->
+
+            <ImageButton
+                android:id="@+id/btnPrevious"
+                android:layout_width="@dimen/btnPrevious_width"
+                android:layout_height="@dimen/btnPrevious_height"
+                android:layout_margin="@dimen/btnControl_margin"
+                android:background="@android:drawable/ic_media_previous" />
+            <!-- Play Button -->
+
+            <ImageButton
+                android:id="@+id/btnPlay"
+                android:layout_width="@dimen/btnPlay_width"
+                android:layout_height="@dimen/btnPlay_height"
+                android:layout_margin="@dimen/btnControl_margin"
+                android:background="@android:drawable/ic_media_play" />
+            <!-- Next Button -->
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="@dimen/btnNext_width"
+                android:layout_height="@dimen/btnNext_height"
+                android:layout_margin="@dimen/btnControl_margin"
+                android:background="@android:drawable/ic_media_next" />
+            <!-- Space Button -->
+
+            <ImageButton
+                android:id="@+id/btnSpace"
+                android:layout_width="@dimen/btnSpace_width"
+                android:layout_height="@dimen/btnSpace_height"
+                android:layout_margin="@dimen/btnControl_margin"
+                android:background="@null" />
+            <!-- Share Button -->
+
+            <ImageButton
+                android:id="@+id/btnShare"
+                android:layout_width="@dimen/btnShare_width"
+                android:layout_height="@dimen/btnShare_height"
+                android:layout_margin="@dimen/btnControl_margin"
+                android:background="@drawable/share_button" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlt_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlt_player_button"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/btnVolume"
+                android:layout_width="@dimen/btnVolume_width"
+                android:layout_height="@dimen/btnVolume_height"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/sound_on" />
+
+            <!-- Volume Bar/Seek bar -->
+
+            <SeekBar
+                android:id="@+id/volumeBar"
+                android:layout_width="@dimen/volumeBar_width"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btnVolume"
+                android:paddingLeft="@dimen/audioProgressBar_paddingLeft"
+                android:paddingRight="@dimen/audioProgressBar_paddingRight"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:thumb="@drawable/time" />
+
+            <ImageButton
+                android:id="@+id/btnTimer"
+                android:layout_width="@dimen/btnTimer_width"
+                android:layout_height="@dimen/btnTimer_height"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/volumeBar"
+                android:background="@drawable/alarm_1" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" > -->
+<!-- <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/left_space"
+    android:choiceMode="singleChoice"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="2dp"
+    tools:context="bhmedia.dungdq.kiemhiepaudio.NavigationDrawerFragment" /> -->
+
+<ListView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_slidermenu"
+    android:layout_width="@dimen/navigation_drawer_width"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:choiceMode="singleChoice"
+    android:divider="@color/list_divider"
+    android:dividerHeight="1dp"       
+    android:listSelector="@drawable/list_selector"
+    android:background="#99000000"/>
+
+<!-- <ListView
+    android:id="@+id/list_downloadmenu"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:choiceMode="singleChoice"
+    android:divider="@color/list_divider"
+    android:dividerHeight="1dp"       
+    android:listSelector="@drawable/list_selector"
+    android:background="@drawable/left_space"/> -->
+
+<!-- </RelativeLayout> -->

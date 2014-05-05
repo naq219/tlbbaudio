@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">audio</string>
+    <string name="title_section1">Kiếm hiệp Việt Nam</string>
+    <string name="title_section2">Các tác giả khác</string>
+    <string name="title_section3">Truyện Cổ Long</string>
+    <string name="title_section4">Truyện Kim Dung</string>
+    <string name="title_section5">Danh sách yêu thích</string>
+    <string name="title_section6">Danh sách tải về</string>
+    <string name="title_section7">Chia sẻ qua Facebook</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+	<string name="search_title">Search</string>
+	<string name="download_title">Download</string>
+	
+	<string name="time_set">Hẹn giờ</string>
+    <string name="cancel">Hủy</string>
+    <string name="time">Time : </string>
+	
+	<!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Kiếm hiệp Việt Nam</item>
+        <item >Các tác giả khác</item>
+        <item >Truyện Cổ Long</item>
+        <item >Truyện Kim Dung</item>
+        <item >Danh sách yêu thích</item>
+        <item >Danh sách tải về</item>
+        <item >Chia sẻ qua Facebook</item>
+        <item >Đánh giá ứng dụng</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/kiemhiep_list_icon</item>
+        <item>@drawable/kiemhiep_list_icon</item>
+        <item>@drawable/kiemhiep_list_icon</item>
+        <item>@drawable/kiemhiep_list_icon</item>
+        <item>@drawable/left_yeuthich</item>
+        <item>@drawable/download</item>
+        <item>@drawable/left_facebook</item>
+        <item>@drawable/left_star</item>
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+</resources>
