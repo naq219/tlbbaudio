@@ -4,7 +4,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="bhmedia.dungdq.kiemhiepaudio.MainActivity" >
+    tools:context="com.telpoo.tlbbaudio.MainActivity" >
 
     <!--
          As the main content view, the view below consumes the entire
@@ -43,7 +43,7 @@
 
     <fragment
         android:id="@+id/navigation_drawer"
-        android:name="bhmedia.dungdq.kiemhiepaudio.NavigationDrawerFragment"
+        android:name="com.telpoo.tlbbaudio.NavigationDrawerFragment"
         android:layout_width="@dimen/navigation_drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="left" />
